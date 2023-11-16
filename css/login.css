@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background: url(../images/background.png);
+    background-size: cover;
+
+}
+
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 15px;
+    width: 350px;
+    height: 420px;
+}
+
+/* Start Login */
+img[alt="user"] {
+    position: absolute;
+    top: -50px;
+    left: 118px;
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+}
+
+h2 {
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+}
+
+input[type="email"],
+[type="text"],
+[type="password"] {
+    position: absolute;
+    border: none;
+    outline: none;
+    color: white;
+    background: none;
+    width: 250px;
+    height: 35px;
+    border-bottom: 2px solid #0094ff;
+    padding: 5px;
+    left: 50px;
+}
+
+input[type="email"] {
+    top: 140px;
+}
+
+input[type="password"] {
+    top: 210px;
+}
+
+#showPassword {
+    position: absolute;
+    right: 60px;
+    top: 215px;
+}
+
+::placeholder {
+    color: #fff;
+    text-transform: capitalize;
+}
+
+input[value="login"] {
+    position: absolute;
+    top: 305px;
+    left: 110px;
+    width: 130px;
+    height: 35px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    background-color: #0077ff;
+    font-size: 20px;
+}
+
+input[value="login"]:hover {
+    color: #0077ff;
+    background-color: white;
+}
+
+a {
+    position: absolute;
+    left: 50px;
+    top: 360px;
+    color: white;
+    cursor: pointer;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.sgin_up_link {
+    left: 235px;
+}
+
+a:hover {
+    color: #72c9ff;
+}
+/* End Login */
