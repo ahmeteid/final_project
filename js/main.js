@@ -15,3 +15,8 @@ window.onclick = function(event) {
         }
     }
 }
+
+function watch_bottom() {
+    // var watch = document.getElementById("watch");
+    window.location.href = "../html/video_content.html"
+}

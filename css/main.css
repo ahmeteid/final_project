@@ -4,7 +4,7 @@
     --main-top-color: #6176F7; 
     --main-transition: 0.3s;
     --main-border-radius: 15px;
-    --main-box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+    --main-box-shadow: 0 2px 15px var(--bottom-color);
     --bottom-color: #FFC27A;
 }
 /* End Variable */
@@ -347,14 +347,16 @@ ul {
     position: relative;
     padding: 10px;
     background-color: white;
-    box-shadow: var(--main-box-shadow);
+    /* box-shadow: var(--main-box-shadow); */
     border-radius: var(--main-border-radius);
     transition: var(--main-transition);
+    border: 1px solid #e7e9eb;
 }
 
 .popular .box:hover {
     transform: translateY(-10px);
     box-shadow: 0 2px 15px var(--bottom-color);
+    border: 1px solid var(--bottom-color);
 }
 
 .popular .box .image {
@@ -426,11 +428,68 @@ ul {
 }
 
 .cards .container .box {
-    background-color: white;
-    border-radius: 15px;
-    padding: 20px;
-    min-height: 350px;
     position: relative;
+    transition: var(--main-transition);
+    perspective: 800px;
+}
+
+.cards .box .card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    transform-style: preserve-3d;
+    border-radius: var(--main-border-radius);
+    transition: 1s;
+}
+
+.cards .box .card::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/uiux_designer.jpeg);
+    background-size: cover;
+    border-radius: var(--main-border-radius);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.cards .box .card::after {
+    content: "UX design focuses on the interaction that a human user has with everyday products and services. The goal of UX design is to make using these products and services, both digital or physical, easy, logical, and fun.";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: white;
+    border-radius: var(--main-border-radius);
+    /* font-size: 20px; */
+    padding: 0 0 0 5px;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    font-size: 15px;
+}
+
+.cards .box .card:hover {
+    transform: rotateY(180deg);
+    box-shadow: var(--main-box-shadow);
+}
+
+/* .cards .box .card img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--main-border-radius);
+} */
+
+/* old cards design */
+/* .cards .box:hover {
+    box-shadow: var(--main-box-shadow);
+    border: 1px solid var(--bottom-color);
 }
 
 .cards .box .info {
@@ -457,4 +516,13 @@ ul {
     text-transform: capitalize;
     font-size: 15px;
 }
+
+.cards .box>p {
+    margin-top: 50px;
+    line-height: 1.5;
+    color: black;
+    text-transform: capitalize;
+} */
+
+
 /* End Cards */
