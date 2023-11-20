@@ -111,6 +111,7 @@ ul {
 
 .header .main-nav {
     display: flex;
+    position: relative;
 }
 
 .header .main-nav>li>a{
