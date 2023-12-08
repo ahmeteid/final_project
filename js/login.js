@@ -1,3 +1,21 @@
+// Show & Hide Password 
+// var myPass = document.getElementById("password");
+// var showBtn = document.getElementById("show-pass")
+
+// showBtn.onclick = function() {
+//     "user strict";
+
+//     if(this.textContent === "Show") {
+//         myPass.setAttribute("type", "text");
+//         this.textContent = "Hide";
+//     } else {
+//         myPass.setAttribute("type", "password");
+//         this.textContent = "Show";
+//     }
+// };
+
+
+
 function valitationEmail() {
 // Get the email and password values
 var email = document.getElementById("email").value;
@@ -22,21 +40,7 @@ if (userExists) {
 } else {
     alert ("Invalid email or password");
 }
-}
-
-// // Toggle password visibility
-// document.getElementById("showPassword").addEventListener("change", function() {
-//     var pass = document.getElementById("password");
-//     pass.type = this.checked ? "text" : "password";
-// });
-
-
-
-
-
-
-
-
+};
 
 
 
