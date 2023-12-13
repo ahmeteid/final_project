@@ -42,6 +42,51 @@ if (userExists) {
 }
 };
 
+// Clear Input Placeholder On Focus
+
+
+// For Email
+document.getElementById("email").onfocus = function() {
+
+    "use strict";
+
+    if(this.placeholder === "email") {
+        this.placeholder = "";
+    }
+
+};
+
+document.getElementById("email").onblur = function() {
+
+    "use strict";
+
+    if(this.placeholder === "") {
+        this.placeholder = "email";
+    }
+
+
+};
+
+
+// For Password
+document.getElementById("password").onfocus = function() {
+
+    "use strict";
+
+    if(this.placeholder === "Enter password") {
+        this.placeholder = "";
+    }
+};
+
+document.getElementById("password").onblur = function() {
+
+    "use strict";
+
+    if(this.placeholder === "") {
+        this.placeholder = "Enter password";
+    }
+};
+
 
 
 // After add database
