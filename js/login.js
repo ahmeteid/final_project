@@ -1,18 +1,18 @@
 // Show & Hide Password 
-// var myPass = document.getElementById("password");
-// var showBtn = document.getElementById("show-pass")
+var myPass = document.getElementById("password");
+var showBtn = document.getElementById("show-pass")
 
-// showBtn.onclick = function() {
-//     "user strict";
+showBtn.onclick = function() {
+    "user strict";
 
-//     if(this.textContent === "Show") {
-//         myPass.setAttribute("type", "text");
-//         this.textContent = "Hide";
-//     } else {
-//         myPass.setAttribute("type", "password");
-//         this.textContent = "Show";
-//     }
-// };
+    if(this.textContent === "Show") {
+        myPass.setAttribute("type", "text");
+        this.textContent = "Hide";
+    } else {
+        myPass.setAttribute("type", "password");
+        this.textContent = "Show";
+    }
+};
 
 
 

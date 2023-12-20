@@ -10,6 +10,9 @@
 </head>
 <!-- do not forget updatting js file -->
 <body>
+    <?php 
+    session_start();
+    ?>
 <!-- Start Header -->
 <div class="header" id="header">
     <div class="container">
@@ -26,6 +29,16 @@
                 </ul>
             </a></li>
             <li><a href="#contact">contact</a></li>
+            <?php 
+            if(isset($_SESSION["username"])){
+                ?>
+            <li><a href="#">Your UserName: <?php
+            echo $_SESSION["username"];
+            ?>
+            </a></li>
+            <?php
+            }
+            ?>
         </ul>
         <!-- <div id="message-container">
             <div id="inbox">

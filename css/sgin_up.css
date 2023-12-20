@@ -76,7 +76,7 @@ input[type="password"] {
     text-transform: capitalize;
 }
 
-input[type="button"] {
+input[type="submit"] {
     position: absolute;
     top: 400px;
     left: 110px;
