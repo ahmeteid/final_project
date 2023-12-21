@@ -25,7 +25,7 @@ function singup() {
 
     // Redirect to login page
     alert("Sign up successful");
-    window.location.href = "../html/login.html";
+    // window.location.href = "../html/login.html";
 
     // // Display the collected data (for demonstration purposes)
     // alert(

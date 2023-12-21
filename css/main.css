@@ -406,6 +406,36 @@ ul {
 .popular .box .image {
     position: relative;
 }
+
+
+.popular .box .image .box-image {
+    position: relative;
+    transition: var(--main-transition);
+}
+
+.popular .box .image .box-image::after {
+    content: "";
+    position: absolute;
+    /*width: 100%;
+    */height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #8ec7ffc2;
+    border-radius: var(--main-border-radius);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    color: white;
+
+}
+
+.popular .box .image .box-image:hover::after {
+    content: "language";
+    width: 100%;
+}
+
 .popular .box .image .box-image img {
     max-width: 100%;
     width: 100%;

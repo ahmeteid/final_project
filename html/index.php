@@ -32,7 +32,7 @@
             <?php 
             if(isset($_SESSION["username"])){
                 ?>
-            <li><a href="#">Your UserName: <?php
+            <li><a href="#">UserName: <?php
             echo $_SESSION["username"];
             ?>
             </a></li>

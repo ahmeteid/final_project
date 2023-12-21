@@ -46,8 +46,11 @@ if (userExists) {
 
 
 // For Email
-document.getElementById("email").onfocus = function() {
 
+var loEmail = document.getElementById("email");
+
+loEmail.onfocus = function() {
+    
     "use strict";
 
     if(this.placeholder === "email") {
@@ -56,7 +59,7 @@ document.getElementById("email").onfocus = function() {
 
 };
 
-document.getElementById("email").onblur = function() {
+loEmail.onblur = function() {
 
     "use strict";
 
@@ -69,7 +72,10 @@ document.getElementById("email").onblur = function() {
 
 
 // For Password
-document.getElementById("password").onfocus = function() {
+
+var loPassword = document.getElementById("password");
+
+loPassword.onfocus = function() {
 
     "use strict";
 
@@ -78,7 +84,7 @@ document.getElementById("password").onfocus = function() {
     }
 };
 
-document.getElementById("password").onblur = function() {
+loPassword.onblur = function() {
 
     "use strict";
 
