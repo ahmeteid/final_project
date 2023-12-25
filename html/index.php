@@ -13,6 +13,7 @@
     <?php 
     session_start();
     ?>
+    <div class="scroller"></div>
 <!-- Start Header -->
 <div class="header" id="header">
     <div class="container">
@@ -32,7 +33,7 @@
             <?php 
             if(isset($_SESSION["username"])){
                 ?>
-            <li><a href="#">UserName: <?php
+            <li><a href="#">Your UserName: <?php
             echo $_SESSION["username"];
             ?>
             </a></li>

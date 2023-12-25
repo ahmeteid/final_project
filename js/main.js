@@ -1,3 +1,13 @@
+// Scroller
+let scrolLine = document.querySelector(".scroller");
+let scrollWidth = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+window.addEventListener("scroll", () => {
+    let scrolTop = document.documentElement.scrollTop;
+    scrolLine.style.width = `${(scrolTop / scrollWidth) * 100}%`;
+});
+
+
+
 function coursesDropDown() {
     var dropdown = document.getElementById("myDropdown");
     dropdown.getElementsByClassName("dropdown-content")[0].classList.toggle("show");
