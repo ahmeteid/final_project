@@ -83,53 +83,71 @@
         <h2>most <span>popular category</span></h2>
     </div>
     <div class="container">
-        <div class="box">
+        <div class="box" id="category-box">
             <i class="fa-solid fa-pen-nib"></i>
-            <a href="#">design</a>
+            <a href="#">programming</a>
+            <div class="info-box">
+                <a href="#">front-end-development</a>
+                <a href="#">front-end-development</a>
+                <a href="#">front-end-development</a>
+                <a href="#">front-end-development</a>
+                <a href="#">front-end-development</a>
+            </div>
         </div>
-        <div class="box">
+        <div class="box" id="category-box">
             <i class="fa-solid fa-pen-nib"></i>
-            <a href="#">Development</a>
+            <a href="#">programming</a>
+            <div class="info-box">
+                <a href="#">front-end-development</a>
+                <a href="#">front-end-development</a>
+                <a href="#">front-end-development</a>
+                <a href="#">front-end-development</a>
+                <a href="#">front-end-development</a>
+            </div>
         </div>
-        <div class="box">
+        <div class="box" id="category-box">
             <i class="fa-solid fa-pen-nib"></i>
-            <a href="#">design</a>
+            <a href="#">programming</a>
+            <div class="info-box">
+                <a href="#">front-end-development</a>
+                <a href="#">front-end-development</a>
+                <a href="#">front-end-development</a>
+                <a href="#">front-end-development</a>
+                <a href="#">front-end-development</a>
+            </div>
         </div>
-        <div class="box">
+        <div class="box" id="category-box">
             <i class="fa-solid fa-pen-nib"></i>
-            <a href="#">design</a>
+            <a href="#">programming</a>
+            <div class="info-box">
+                <a href="#">front-end-development</a>
+                <a href="#">front-end-development</a>
+                <a href="#">front-end-development</a>
+                <a href="#">front-end-development</a>
+                <a href="#">front-end-development</a>
+            </div>
         </div>
-        <div class="box">
+        <div class="box" id="category-box">
             <i class="fa-solid fa-pen-nib"></i>
-            <a href="#">design</a>
+            <a href="#">programming</a>
+            <div class="info-box">
+                <a href="#">front-end-development</a>
+                <a href="#">front-end-development</a>
+                <a href="#">front-end-development</a>
+                <a href="#">front-end-development</a>
+                <a href="#">front-end-development</a>
+            </div>
         </div>
-        <div class="box">
+        <div class="box" id="category-box">
             <i class="fa-solid fa-pen-nib"></i>
-            <a href="#">design</a>
-        </div>
-        <div class="box">
-            <i class="fa-solid fa-pen-nib"></i>
-            <a href="#">design</a>
-        </div>
-        <div class="box">
-            <i class="fa-solid fa-pen-nib"></i>
-            <a href="#">design</a>
-        </div>
-        <div class="box">
-            <i class="fa-solid fa-pen-nib"></i>
-            <a href="#">design</a>
-        </div>
-        <div class="box">
-            <i class="fa-solid fa-pen-nib"></i>
-            <a href="#">design</a>
-        </div>
-        <div class="box">
-            <i class="fa-solid fa-pen-nib"></i>
-            <a href="#">design</a>
-        </div>
-        <div class="box">
-            <i class="fa-solid fa-pen-nib"></i>
-            <a href="#">design</a>
+            <a href="#">programming</a>
+            <div class="info-box">
+                <a href="#">front-end-development</a>
+                <a href="#">front-end-development</a>
+                <a href="#">front-end-development</a>
+                <a href="#">front-end-development</a>
+                <a href="#">front-end-development</a>
+            </div>
         </div>
         
     </div>

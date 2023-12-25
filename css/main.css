@@ -35,6 +35,8 @@ body {
     height: 4px;
     width: 0;
     background-color: #3461fd;
+    box-shadow: var(--main-box-shadow);
+    border-bottom: 1px solid var(--bottom-color);
     z-index: 9999;
 }
 
@@ -339,6 +341,7 @@ ul {
     padding: var(--section-padding);
     background-color: #F3F4F5;
     position: relative;
+    /* min-height: 500px; */
 }
 
 .category .main-head {
@@ -363,6 +366,17 @@ ul {
     height: 40px;
     cursor: pointer;
     transition: var(--main-transition);
+    position: relative;
+}
+
+.category .container .box::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    border: 10px solid;
+    border-color: transparent transparent #6176f7 transparent;
+    display: none;
 }
 
 .category .container .box:hover {
@@ -374,12 +388,53 @@ ul {
 .category .box i {
     font-size: 20px;
     color: #6D737A;
+    /* filter: drop-shadow(5px 7px 10px var(--bottom-color)); */
 }
 
-.category .box a {
+.category .box>a {
     color: black;
     text-transform: capitalize;
     font-size: 18px;
+}
+
+.category .container .box .info-box {
+    position: absolute;
+    text-align: center;
+    bottom: 50px;
+    min-height: 150px;
+    padding: 10px 20px;
+    background: var(--main-top-color);
+    border-radius: var(--main-border-radius);
+    color: white;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: var(--main-box-shadow);
+    border: 1px solid var(--bottom-color);
+    z-index: 1;
+    display: none;
+}
+
+.category .container .box:hover .info-box,
+.category .container .box:hover::after {
+    display: block;
+}
+
+.category .container .box .info-box a {
+    margin: 10px 0;
+    padding: 10px;
+    color: white;
+    border-bottom: 1px solid white;
+    transition: var(--main-transition);
+    display: block;
+}
+
+.category .container .box .info-box a:hover {
+    transform: scale(1.1);
+    color: #ffffffc6;
+    border-color: #ffffffc6;
 }
 /* End Category */
 
