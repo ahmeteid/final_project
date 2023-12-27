@@ -797,14 +797,14 @@ ul {
 /* Start Footer */
 
 footer {
-    padding: 50px 0 0;
+    margin-top: var(--section-padding);
     position: relative;
+    background-color: #21212F;
 }
 
 footer .container {
     display: flex;
-    justify-content: space-evenly;
-    background-color: #21212F;
+    justify-content: space-between;
 }
 
 @media (max-width: 767px) {
