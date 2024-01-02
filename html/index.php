@@ -12,7 +12,7 @@
 <body>
     <?php 
     session_start();
-    ?>
+    ?> 
     <div class="scroller"></div>
 <!-- Start Header -->
 <div class="header" id="header">
@@ -85,7 +85,7 @@
     <div class="container">
         <div class="box" id="category-box">
             <i class="fa-solid fa-code"></i>
-            <a href="#">web programming</a>
+            <a href="web_dev.html" target="_blank">web programming</a>
             <div class="info-box">
                 <a href="#">front-end-development</a>
                 <a href="#">back-end-development</a>
