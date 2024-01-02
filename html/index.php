@@ -29,7 +29,7 @@
                     <li><a href="#">english</a></li>
                 </ul>
             </a></li>
-            <li><a href="#contact">contact</a></li>
+            <li><a href="#footer">contact</a></li>
             <?php 
             if(isset($_SESSION["username"])){
                 ?>
@@ -84,14 +84,13 @@
     </div>
     <div class="container">
         <div class="box" id="category-box">
-            <i class="fa-solid fa-pen-nib"></i>
-            <a href="#">programming</a>
+            <i class="fa-solid fa-code"></i>
+            <a href="#">web programming</a>
             <div class="info-box">
                 <a href="#">front-end-development</a>
-                <a href="#">front-end-development</a>
-                <a href="#">front-end-development</a>
-                <a href="#">front-end-development</a>
-                <a href="#">front-end-development</a>
+                <a href="#">back-end-development</a>
+                <a href="#">full-stack-development</a>
+                <a href="#">ui-ux-designer</a>
             </div>
         </div>
         <div class="box" id="category-box">
@@ -346,7 +345,7 @@
 <!-- End Floatting Button -->
 
 <!-- Start Footer -->
-<footer>
+<footer id="footer">
     <div class="container">
         <div class="contact-us">
             <h2>as.code</h2>
@@ -372,7 +371,7 @@
         </div>
     </div>
 </footer>
-<!-- End Fotter -->
+<!-- End Footer -->
     
     <script src="../js/main.js"></script>
 </body>
